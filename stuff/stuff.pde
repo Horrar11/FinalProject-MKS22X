@@ -3,12 +3,7 @@ int x = 0;
 int dex = 75;
 float sps = 1.5 + dex * 6.5 / 75;
 
-void setup() {
-  size(1280, 640);
-  background(255);
-  noStroke();
-  fill(102);
-}
+
 
 void draw() {
   if(mousePressed){
