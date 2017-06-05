@@ -10,15 +10,16 @@ class Bullet{
   }
   class HLine { 
   float ypos, speed; 
-  HLine (float y, float s) {  
+  HLine (float y, float s) {
     ypos = y; 
     speed = s; 
   } 
-  void update() { 
+  void update() {
     ypos += speed; 
-    if (ypos > height) { 
+    if (ypos > height) {
       ypos = 0; 
     } 
     line(0, ypos, width, ypos); 
+  }
   }
 }
