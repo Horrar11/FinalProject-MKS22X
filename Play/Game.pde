@@ -1,11 +1,12 @@
 class Game{
   Map map;
   Game () {
-    Map map = new Map();
-    
+    map = new Map();
+    update();
   }
   
   void update() {
+    
     if(mousePressed){
       shoot();
       delay(1000/8);

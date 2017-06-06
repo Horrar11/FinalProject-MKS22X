@@ -1,8 +1,9 @@
-Game game = new Game();
+Game game;
 
 void setup() {
-  size(1280, 640);
-  background(255);
+  size(810,810);
+  background(155);
+  game = new Game();
   game.update();
 }
 void draw() {

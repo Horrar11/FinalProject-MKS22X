@@ -4,23 +4,28 @@ class Map {
   float rad;
   
   Map () {
-    map = createShape(RECT, 0, 0, 100, 100);
+    map = createShape(RECT, 0, 0, 500, 500);
+    rad = 0;
   }
   
   void rot(float deg) {
-    translate(width/2, height/2);
-    rotate(deg);
-    rect(0, 0, 100, 100);
+    rad += deg;
+    translate(width/2,height/2);
+    //translate(0,0);
+    rotate(rad);
+    rect(-500,-500,1000,1000);
   }
   
   void update() {
+    
     if (keyPressed) {
       if (key == 'q') {
-        rot(PI / 36);
+        rot(PI / 72);
       }
       if (key == 'e') {
-        rot(- PI / 36);
+        rot(- PI / 72);
       }
     }
   }
+  
 }
