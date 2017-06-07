@@ -1,25 +1,23 @@
 class Bullet{
   PShape shot;
   float X, Y, sX, sY;
-  Bullet (float x, float y, float a, float b) {
+  float rad;
+  Bullet (float spd, float rad, float x, float y, float a, float b) {
+    noStroke();
     shot = createShape(ELLIPSE,x,y,a,b);
+    fill(100);
+    sX = spd * cos(rad);
+    sY = spd * sin(rad);
   }
   
   void update() {
-     
-  }
-  class HLine { 
-  float ypos, speed; 
-  HLine (float y, float s) {
-    ypos = y; 
-    speed = s; 
-  } 
-  void update() {
-    ypos += speed; 
-    if (ypos > height) {
-      ypos = 0; 
-    } 
-    line(0, ypos, width, ypos); 
-  }
+     X += sX;
+     Y += sY;
+  }  
+    
+  void placeOn(Map map) {
+    
+    
+    
   }
 }

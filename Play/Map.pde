@@ -13,11 +13,13 @@ class Map {
     translate(width/2,height/2);
     //translate(0,0);
     rotate(rad);
+    noStroke();
     rect(-500,-500,1000,1000);
+    fill(0);
   }
   
   void update() {
-    
+    clear();
     if (keyPressed) {
       if (key == 'q') {
         rot(PI / 72);

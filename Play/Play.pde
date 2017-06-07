@@ -16,9 +16,3 @@ void draw() {
 void mousePressed(){
     loop();
 }
-
-void shoot(){
-  noStroke();
-  ellipse(mouseX, mouseY, 5, 5); 
-  fill(123);
-}
