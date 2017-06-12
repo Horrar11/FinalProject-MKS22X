@@ -15,7 +15,7 @@ class Bullet{
      Y += sY;
   }  
     
-  void placeOn(Map map) {
+  void placeOnMap() {
     
     
     
